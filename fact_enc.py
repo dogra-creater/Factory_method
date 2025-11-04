@@ -19,15 +19,15 @@ def encrypt_config(passphrase: str):
     credentials = {
         "camera_1": {
             "type": "ipcamera",
-            "ip": "192.168.31.68",
+            "ip": "  ",
             "user": "admin",
-            "password": "Mypassword@25"
+            "password": "  "
         },
         "camera_2": {
             "type": "cpplus",
-            "ip": "192.168.31.70",
+            "ip": "  ",
             "user": "admin",
-            "password": "Mypassword@25"
+            "password": "  "
         }
     }
 
@@ -46,3 +46,4 @@ def encrypt_config(passphrase: str):
 if __name__ == "__main__":
     passphrase = input("Enter passphrase to encrypt credentials: ")
     encrypt_config(passphrase)
+
